@@ -62,8 +62,8 @@ class ServerController extends Controller {
         ]);
     }
 
-    public function update(Request $request, $id) {
-        $server = Server::find($id);
+    public function update(Request $request, $identifier) {
+        $server = Server::find($identifier);
         $server->hostname = $request->input('hostname');
         $server->save();
         return response()->json([
@@ -71,8 +71,8 @@ class ServerController extends Controller {
         ]);
     }
 
-    public function power(Request $request, $id) {
-        $server = Server::find($id);
+    public function power(Request $request, $identifier) {
+        $server = Server::find($identifier);
         $server->status = $server->status === 'on' ? 'off' : 'on';
         $server->save();
         sleep(5);
@@ -81,8 +81,8 @@ class ServerController extends Controller {
         ]);
     }
 
-    public function delete($id) {
-        $server = Server::find($id);
+    public function delete($identifier) {
+        $server = Server::find($identifier);
         $server->delete();
         sleep(5);
         return response('', 204);
