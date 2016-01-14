@@ -1,0 +1,1 @@
+{"virtualbox":{"/home/vagrant/backend":{"type":null,"mount_options":[],"guestpath":"/home/vagrant/backend","hostpath":"/Users/ysimard/workspace/poc-panel/backend","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/ysimard/workspace/poc-panel/backend","disabled":false,"__vagrantfile":true}}}

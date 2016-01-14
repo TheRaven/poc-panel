@@ -53,7 +53,7 @@ class ServerController extends Controller {
         }
 
         $server->save();
-        sleep(10);
+        //sleep(10);
 
         return response()->json([
             'servers' => [ $server->serialize() ],
