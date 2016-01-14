@@ -3,6 +3,8 @@ engines:
     enabled: true
   phpmd:
     enabled: true
+     config:
+      rulesets: "phpruleset.xml"
   eslint:
     enabled: true
   csslint:
