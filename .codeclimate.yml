@@ -1,0 +1,19 @@
+engines:
+  phpcodesniffer:
+    enabled: true
+  phpmd:
+    enabled: true
+  eslint:
+    enabled: true
+  csslint:
+    enabled: true
+  watson:
+    enabled: true
+ratings:
+  paths:
+  - backend/**
+  - frontend/**
+exclude_paths:
+- frontend/vendor/**/*
+- frontend/tests/**/*
+- frontend/public/**/*
